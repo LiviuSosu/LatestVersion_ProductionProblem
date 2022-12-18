@@ -14,8 +14,6 @@ builder.Services.AddDbContext<CollegeContext>(options =>
   options.UseSqlServer(connectionString));
 
 builder.Services.AddHealthChecks()
-      .AddCheck("AlwaysHealthy", () => HealthCheckResult.Healthy(), tags: new[] { "Tag1" });
-builder.Services.AddHealthChecks()
   .AddSqlServer(connectionString);
 builder.Services
   .AddHealthChecksUI(s =>
@@ -24,8 +22,6 @@ builder.Services
   })
   //.AddInMemoryStorage();
   .AddSqlServerStorage(connectionString);
-
-
 
 var app = builder.Build();
 
