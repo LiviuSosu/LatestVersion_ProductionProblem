@@ -12,7 +12,7 @@
 		<PackageReference Include="AspNetCore.HealthChecks.UI.Client" Version="6.0.5" />
 		<PackageReference Include="AspNetCore.HealthChecks.UI.InMemory.Storage" Version="6.0.5" />
 		<PackageReference Include="AspNetCore.HealthChecks.UI.SqlServer.Storage" Version="6.0.5" />
-		<PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks" Version="6.0.12" />
+		<PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks" Version="7.0.1" />
 	</ItemGroup>
 
 	<ItemGroup>
