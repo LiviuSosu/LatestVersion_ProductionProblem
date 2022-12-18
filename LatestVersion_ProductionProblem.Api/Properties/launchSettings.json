@@ -4,8 +4,8 @@
     "windowsAuthentication": false,
     "anonymousAuthentication": true,
     "iisExpress": {
-      "applicationUrl": "http://localhost:12312",
-      "sslPort": 0
+      "applicationUrl": "http://localhost:35534",
+      "sslPort": 44341
     }
   },
   "profiles": {
@@ -14,7 +14,17 @@
       "dotnetRunMessages": true,
       "launchBrowser": true,
       "launchUrl": "weatherforecast",
-      "applicationUrl": "http://localhost:5114",
+      "applicationUrl": "http://localhost:5010",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    },
+    "https": {
+      "commandName": "Project",
+      "dotnetRunMessages": true,
+      "launchBrowser": true,
+      "launchUrl": "weatherforecast",
+      "applicationUrl": "https://localhost:7070;http://localhost:5010",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

@@ -1,12 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
-using System.Reflection.Emit;
 
-namespace LatestVersion_ProductionProblem.EF_PeristanceLayer
+namespace LatestVersion_ProductionProblem.Persistance
 {
-    public class SchoolContext : DbContext
+    public class CollegeContext : DbContext
     {
-        public SchoolContext(DbContextOptions<SchoolContext> options)
+        public CollegeContext(DbContextOptions<CollegeContext> options)
             : base(options)
         {
         }

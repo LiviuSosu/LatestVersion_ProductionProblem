@@ -1,4 +1,5 @@
-﻿namespace LatestVersion_ProductionProblem.EF_PeristanceLayer
+﻿
+namespace LatestVersion_ProductionProblem.Persistance
 {
     public class Student
     {

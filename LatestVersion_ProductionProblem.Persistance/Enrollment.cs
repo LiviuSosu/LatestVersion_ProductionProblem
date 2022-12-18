@@ -1,8 +1,12 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using System.Diagnostics;
 
-namespace LatestVersion_ProductionProblem.EF_PeristanceLayer
+namespace LatestVersion_ProductionProblem.Persistance
 {
+    public enum Grade
+    {
+        A, B, C, D, F
+    }
+
     public class Enrollment
     {
         public int EnrollmentID { get; set; }
@@ -13,10 +17,5 @@ namespace LatestVersion_ProductionProblem.EF_PeristanceLayer
 
         public Course Course { get; set; }
         public Student Student { get; set; }
-    }
-
-    public enum Grade
-    {
-        A, B, C, D, F
     }
 }

@@ -1,4 +1,4 @@
-namespace LatestVersion_ProductionProblem.WebApi
+namespace LatestVersion_ProductionProblem.Api
 {
     public class WeatherForecast
     {
