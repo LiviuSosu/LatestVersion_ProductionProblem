@@ -20,7 +20,6 @@ builder.Services
   {
       s.AddHealthCheckEndpoint("endpoint1", "https://localhost:7070/health");
   })
-  //.AddInMemoryStorage();
   .AddSqlServerStorage(connectionString);
 
 var app = builder.Build();
@@ -40,12 +39,6 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 
 app.MapControllers();
-
-
-//AspNetCore.HealthChecks.SqlServer
-//AspNetCore.HealthChecks.UI.SqlServer.Storage
-//Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore
-//Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions
 
 app.UseRouting().UseEndpoints(endpoints =>
 {
